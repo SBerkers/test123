@@ -1,0 +1,33 @@
+<script>
+	function maghet(){
+		var vleeftijd = document.getElementById("leeftijd").value;
+		var kleur
+
+		if (vleeftijd < 16){
+			kleur = "red"
+		}
+		if(vleeftijd>17){
+
+			kleur = "green"
+		}
+
+		if (vleeftijd >15 && vleeftijd<18){
+
+			kleur = "orange"
+		}
+	
+		var elem = document.getElementById("uitkomst");
+		elem.style.backgroundColor = kleur;
+
+
+	}
+
+	
+</script>
+
+<input id=leeftijd type=text>
+<input type=button value=check onclick="maghet()">
+
+<div id=uitkomst>
+mag het
+</div>
