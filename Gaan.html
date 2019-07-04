@@ -1,5 +1,50 @@
-wefwefwef
+    
+<script>
+	function starten(){
+        var leidenletsgo
+        leidenletsgo = "Fred";
 
-testtest
 
-Hoi nog een zin groetjes
+            if(leidenletsgo=="Fred"){
+
+                alert("kijk uit daar is fred");
+            }
+
+            for(var i=0 ; i < 4 ; i++ ){
+                console.log (i);
+
+            }
+
+            optellen(2) //argument 7
+            optellen(9) //argument 9
+
+
+
+		var resultaatsdiv = document.getElementById("resultaat");
+		resultaatsdiv.innerHTML = leidenletsgo;
+	}
+    
+
+    function optellen(mijngetal) //parameter =mijngetal
+    
+    {
+
+        var a = 3
+        var b = mijngetal
+        var c = a + b
+
+        if(c<10){
+
+            console.log("onder de 10")
+        }
+    }
+</script>
+
+Hallo Allen,
+
+<br>
+
+<input type=button value=starten onclick=starten()>
+
+
+<div id=resultaat></div>
